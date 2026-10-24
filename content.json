@@ -1,0 +1,228 @@
+{
+  "operator": "北京晓目标科技有限公司",
+  "email": "lusanyuss@gmail.com",
+  "languages": {
+    "en": {
+      "name": "ClipReady",
+      "hub": "Privacy & terms",
+      "intro": "How this version handles data, its usage terms and how to contact us.",
+      "documents": {
+        "privacy": {
+          "title": "Privacy policy",
+          "summary": "Where data is processed, retained and removed.",
+          "sections": [
+            {
+              "title": "1. Provider",
+              "paragraphs": [
+                "ClipReady is provided by 北京晓目标科技有限公司. Privacy contact: lusanyuss@gmail.com. It is an offline video compression and conversion app."
+              ]
+            },
+            {
+              "title": "2. Videos and task records",
+              "paragraphs": [
+                "Selected videos are processed on your device. ClipReady copies selected originals into its private storage so tasks can be retried and stores local task history, output details and preferences. It does not upload videos or task records to an app server."
+              ]
+            },
+            {
+              "title": "3. Device and system services",
+              "paragraphs": [
+                "The system picker may download cloud-hosted media before the app receives it. Saving to Photos, exporting to Files and sharing use the system service or destination you select. Their network access and policies apply. Files and outputs remain local until you choose to export or share them."
+              ]
+            },
+            {
+              "title": "4. Accounts and third parties",
+              "paragraphs": [
+                "The current app does not require or provide account sign-in, cloud synchronization, ads, analytics or crash reporting. Store billing is disabled. If purchases are enabled in a later release, the app will disclose the actual processing before purchase. This website contains no scripts, analytics or collection forms; GitHub Pages handles its own network and security logs."
+              ]
+            },
+            {
+              "title": "5. Retention and removal",
+              "paragraphs": [
+                "Remove local task records and app-owned copies using the app’s controls. Original camera assets and exported copies are separate; removing a task does not authorize deleting an original. Uninstalling removes private copies, subject to system storage and backup behavior. Save wanted results to Photos or Files before uninstalling."
+              ]
+            },
+            {
+              "title": "6. Support",
+              "paragraphs": [
+                "Email lusanyuss@gmail.com with the issue and basic device details. We use information you choose to send to handle the request. Do not send passwords or unnecessary private videos. You may ask about or request deletion of support correspondence."
+              ]
+            }
+          ]
+        },
+        "terms": {
+          "title": "Terms of use",
+          "summary": "Service scope, usage rules and current billing status.",
+          "sections": [
+            {
+              "title": "1. Service",
+              "paragraphs": [
+                "Use the app only for media you own or have permission to process, save and share. Respect the source service’s terms. Links, supported formats and device capabilities can change."
+              ]
+            },
+            {
+              "title": "2. Local files",
+              "paragraphs": [
+                "Keep backups of important files. Processing may change size, quality, metadata or compatibility. Review the result before discarding originals. Local results are not a cloud backup."
+              ]
+            },
+            {
+              "title": "3. Charges and availability",
+              "paragraphs": [
+                "Membership sales are currently disabled. No paid membership is sold through this release. Store availability and platform capabilities depend on their actual status; publication of these documents does not represent store approval."
+              ]
+            },
+            {
+              "title": "4. Contact and updates",
+              "paragraphs": [
+                "For support or privacy requests, contact lusanyuss@gmail.com. We update these documents when the service or data processing changes."
+              ]
+            }
+          ]
+        },
+        "deletion": {
+          "title": "Manage your data",
+          "summary": "Manage local data, sign-in access and support requests.",
+          "sections": [
+            {
+              "title": "Local data",
+              "paragraphs": [
+                "There is no app-operated cloud account database. Use in-app controls to remove local records and app-owned files; export important results before uninstalling."
+              ]
+            },
+            {
+              "title": "Access and requests",
+              "paragraphs": [
+                "The current app has no account sign-in, so there is no cloud account to delete.",
+                "Contact lusanyuss@gmail.com for privacy requests and support correspondence."
+              ]
+            }
+          ]
+        },
+        "support": {
+          "title": "Support",
+          "summary": "lusanyuss@gmail.com",
+          "sections": [
+            {
+              "title": "Contact us",
+              "paragraphs": [
+                "Email lusanyuss@gmail.com with the problem, device model, OS and app version, and reproduction steps.",
+                "Do not send passwords, verification codes, cookies, identity tokens or unnecessary private media. Email is sent only when you choose; the app does not automatically upload diagnostics."
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "zh": {
+      "name": "视频轻装 · ClipReady",
+      "hub": "隐私与服务说明",
+      "intro": "了解本版的数据处理、使用规则和联系渠道。",
+      "documents": {
+        "privacy": {
+          "title": "隐私政策",
+          "summary": "数据在何处处理，如何保留和清理。",
+          "sections": [
+            {
+              "title": "1. 服务提供者",
+              "paragraphs": [
+                "视频轻装（ClipReady）由北京晓目标科技有限公司提供。隐私联系邮箱：lusanyuss@gmail.com。本应用提供离线视频压缩与转换。"
+              ]
+            },
+            {
+              "title": "2. 视频与任务记录",
+              "paragraphs": [
+                "选择的视频在设备上处理。为便于重试，应用将选中原片复制到私有目录，并在本机保存任务历史、输出信息和设置；不会将视频或任务记录上传到应用服务器。"
+              ]
+            },
+            {
+              "title": "3. 系统服务",
+              "paragraphs": [
+                "系统选择器可能先下载云端媒体，再将文件交给应用。保存相册、导出文件和分享使用你选择的系统服务或目标应用，它们的网络访问和政策适用。视频与结果保留在本机，直到你主动导出或分享。"
+              ]
+            },
+            {
+              "title": "4. 账号与第三方",
+              "paragraphs": [
+                "当前应用不要求或提供账号登录、云同步、广告、统计或崩溃上报，商店购买关闭。若后续开放购买，会在购买前披露实际处理方式。本网站没有脚本、统计或收集表单；GitHub Pages 按其政策处理网络和安全日志。"
+              ]
+            },
+            {
+              "title": "5. 保留与清理",
+              "paragraphs": [
+                "可通过应用内功能移除任务记录和应用自有副本。相机原片、导出文件与任务记录分别管理，移除任务不表示授权删除原片。卸载会移除私有副本，系统存储和备份行为可能影响保留情况；卸载前请将需要的结果保存到相册或文件。"
+              ]
+            },
+            {
+              "title": "6. 联系支持",
+              "paragraphs": [
+                "可向lusanyuss@gmail.com发送问题及基本设备信息，我们使用你选择发送的内容处理请求。不要发送密码或不必要的私人视频；可询问或申请删除支持往来。"
+              ]
+            }
+          ]
+        },
+        "terms": {
+          "title": "服务条款",
+          "summary": "功能范围、使用规则与当前收费状态。",
+          "sections": [
+            {
+              "title": "1. 服务",
+              "paragraphs": [
+                "仅处理、保存和分享你拥有或已获授权使用的媒体，并遵守来源服务的条款。链接、格式支持和设备能力可能发生变化。"
+              ]
+            },
+            {
+              "title": "2. 本地文件",
+              "paragraphs": [
+                "请备份重要文件。处理可能改变大小、画质、元数据或兼容性；丢弃原片前请检查结果。本地结果不是云备份。"
+              ]
+            },
+            {
+              "title": "3. 收费与可用性",
+              "paragraphs": [
+                "本版会员销售关闭，不出售付费会员。商店上架及平台能力以实际状态为准，公开本协议不代表已经通过商店审核。"
+              ]
+            },
+            {
+              "title": "4. 支持与更新",
+              "paragraphs": [
+                "支持及隐私请求请联系lusanyuss@gmail.com。服务或数据处理变化时，我们会更新相关说明。"
+              ]
+            }
+          ]
+        },
+        "deletion": {
+          "title": "数据管理",
+          "summary": "管理本机数据、登录授权与支持请求。",
+          "sections": [
+            {
+              "title": "本机数据",
+              "paragraphs": [
+                "应用不运营云端账号库。通过应用内功能清理本机记录和应用自有文件，卸载前导出重要结果。"
+              ]
+            },
+            {
+              "title": "授权与请求",
+              "paragraphs": [
+                "当前无账号登录，不需要申请删除云端账号。",
+                "联系 lusanyuss@gmail.com 处理支持往来和隐私请求。"
+              ]
+            }
+          ]
+        },
+        "support": {
+          "title": "联系支持",
+          "summary": "lusanyuss@gmail.com",
+          "sections": [
+            {
+              "title": "联系我们",
+              "paragraphs": [
+                "请向lusanyuss@gmail.com发送问题、设备型号、系统和应用版本及复现步骤。",
+                "不要发送密码、验证码、Cookie、身份令牌或不必要的私人媒体。邮件由你主动发送，不自动上传诊断信息。"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
