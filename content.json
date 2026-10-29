@@ -30,21 +30,33 @@
               ]
             },
             {
-              "title": "4. Accounts and third parties",
+              "title": "4. Optional Google services",
               "paragraphs": [
-                "The current app does not require or provide account sign-in, cloud synchronization, ads, analytics or crash reporting. Store billing is disabled. If purchases are enabled in a later release, the app will disclose the actual processing before purchase. This website contains no scripts, analytics or collection forms; GitHub Pages handles its own network and security logs."
+                "No registration is required to compress or export videos. Service-enabled Android releases may use Google AdMob and its consent platform to show banners on Home, Exports, Results and Settings, and frequency-limited interstitials when returning home after successful batches. The advertising SDK can process IP-derived approximate location, app interactions, device or advertising identifiers, and diagnostic information for advertising, measurement and fraud prevention. Advertising privacy choices are provided when required. A verified one-time ad-removal purchase stops ad requests and removes all ad space.",
+                "Firebase Analytics and Crashlytics are separate choices, both off by default. Analytics can process usage events, installation identifiers, device/app information and approximate location derived by the SDK. Crashlytics processes crash, performance and diagnostic information and installation identifiers. Our custom events exclude media, filenames, paths, feedback text, emails and purchase tokens. Our Dart error reporting redacts error messages. You can stop future optional collection in Settings; this does not automatically erase previously submitted data.",
+                "Google Play handles checkout and payment details. Purchasing and restoring use your Google Play purchasing account; there is no app registration or sign-in. The app receives purchase state and signed receipts, validates them on the device and keeps a private verified entitlement cache for offline startup. It does not receive your payment-card details. Successful store refreshes can revoke a refunded or cancelled entitlement; offline devices cannot detect refunds in real time. There is no subscription or server-side purchase-verification system in this release."
               ]
             },
             {
-              "title": "5. Retention and removal",
+              "title": "5. Text feedback",
               "paragraphs": [
-                "Remove local task records and app-owned copies using the app’s controls. Original camera assets and exported copies are separate; removing a task does not authorize deleting an original. Uninstalling removes private copies, subject to system storage and backup behavior. Save wanted results to Photos or Files before uninstalling."
+                "Feedback is sent only after you enter text, agree to the listed upload details and press Send. The app creates a private anonymous Firebase Authentication identifier and writes your message, category, submission ID, app version/build, operating system and language to Cloud Firestore. This technical identifier is not an app sign-in or the source of purchase entitlements. Authentication and network services may process IP addresses and device/network information. You do not have to register, provide an email address or attach files. Do not include private information or video content.",
+                "Only a server-confirmed transaction is shown as received. If the network result is uncertain, a local draft and stable submission ID allow a safe retry. Keep the displayed Feedback ID for support or deletion requests. The client cannot enumerate other feedback, modify submitted feedback or delete server records directly."
               ]
             },
             {
-              "title": "6. Support",
+              "title": "6. Retention and deletion",
               "paragraphs": [
-                "Email lusanyuss@gmail.com with the issue and basic device details. We use information you choose to send to handle the request. Do not send passwords or unnecessary private videos. You may ask about or request deletion of support correspondence."
+                "Local task records and app-owned copies are managed using the app controls. Camera originals and exported copies are separate. Uninstalling removes app-private storage subject to platform behavior; save wanted outputs first.",
+                "Feedback is intended to be removed after handling and within 180 days. In the Spark implementation this is an operator-managed deletion process, not an automatic expiry job. Anonymous authentication records also require operator review and deletion. Contact lusanyuss@gmail.com with the Feedback ID and approximate date for a deletion request; do not send purchase tokens or private videos. Do not assume uninstalling deletes cloud feedback.",
+                "Analytics retention is configured in the project; the recommended launch setting is 2 months. Crashlytics, AdMob, Google Play and support email retain information under their respective policies and configured settings. Retention settings, deletion handling and cloud arrival must be verified before production."
+              ]
+            },
+            {
+              "title": "7. Providers, transfers and contact",
+              "paragraphs": [
+                "Google services may process data on infrastructure outside your country; Firestore storage uses the selected project location. Encryption in transit is provided by the service SDKs. We do not upload your media for compression or require device-location access.",
+                "This static website contains no app SDK, analytics scripts or feedback forms; GitHub Pages handles its own hosting/network logs. Privacy contact: lusanyuss@gmail.com. Provider: 北京晓目标科技有限公司. Updated 2026-10-29. This policy describes the service-enabled Android offering; local candidates explicitly marked unconfigured do not make unavailable services operational."
               ]
             }
           ]
@@ -68,7 +80,7 @@
             {
               "title": "3. Charges and availability",
               "paragraphs": [
-                "Membership sales are currently disabled. No paid membership is sold through this release. Store availability and platform capabilities depend on their actual status; publication of these documents does not represent store approval."
+                "The app is free to download and all local compression features remain free. Service-enabled Android releases can offer a one-time non-consumable purchase to remove all advertising; there is no subscription. The store shows the local price and asks for confirmation before payment. Pending payments do not grant ad removal. Restore uses the current Play account. Refunds and revocations are reflected on successful store refresh, not in real time while offline. Availability depends on actual store configuration and region."
               ]
             },
             {
@@ -81,19 +93,18 @@
         },
         "deletion": {
           "title": "Manage your data",
-          "summary": "Manage local data, sign-in access and support requests.",
+          "summary": "Manage local data, optional data collection and support requests.",
           "sections": [
             {
               "title": "Local data",
               "paragraphs": [
-                "There is no app-operated cloud account database. Use in-app controls to remove local records and app-owned files; export important results before uninstalling."
+                "The app does not provide registration or sign-in. Use the app to manage local records and app-owned files. Anonymous feedback creates a private cloud identifier and submitted text, which are separate from local files. Uninstalling does not delete that feedback."
               ]
             },
             {
               "title": "Access and requests",
               "paragraphs": [
-                "The current app has no account sign-in, so there is no cloud account to delete.",
-                "Contact lusanyuss@gmail.com for privacy requests and support correspondence."
+                "To stop optional Analytics or Crashlytics collection, turn off the separate switches in Settings. To request deletion of feedback or support correspondence, email lusanyuss@gmail.com with the Feedback ID and approximate date. Do not send passwords, purchase tokens or private media. We review requests against the data we actually hold. Play purchase records and Google-held SDK data are also subject to Google controls and policies."
               ]
             }
           ]
@@ -141,21 +152,33 @@
               ]
             },
             {
-              "title": "4. 账号与第三方",
+              "title": "4. 可选 Google 服务",
               "paragraphs": [
-                "当前应用不要求或提供账号登录、云同步、广告、统计或崩溃上报，商店购买关闭。若后续开放购买，会在购买前披露实际处理方式。本网站没有脚本、统计或收集表单；GitHub Pages 按其政策处理网络和安全日志。"
+                "压缩和导出无需注册。启用服务的 Android 版本可使用 Google AdMob 及其同意管理平台，在首页、导出记录、结果和设置展示横幅，并在成功完成批次后返回首页时展示有频率限制的插屏。广告 SDK 可处理由 IP 推导的大致位置、App 交互、设备或广告标识及诊断信息，用于广告、衡量和防欺诈；按要求提供广告隐私选项。已验证的一次性去广告购买会停止广告请求并移除全部广告占位。",
+                "Firebase Analytics 与 Crashlytics 分别选择，首次默认关闭。统计 SDK 可处理使用事件、安装标识、设备及 App 信息和由 SDK 推导的大致位置。崩溃服务处理崩溃、性能与诊断信息及安装标识。自定义事件不包含媒体、文件名、路径、反馈正文、邮箱或购买令牌；Dart 错误报告会隐去异常正文。你可在设置中停止后续可选采集，这不自动删除此前已提交的数据。",
+                "Google Play 处理结账和付款资料。购买和恢复使用 Google Play 购买账号，App 不提供注册或登录。App 接收购买状态及签名回执，在设备上验证并保存私有权益缓存，以便离线启动。App 不接收银行卡资料。成功刷新商店状态可撤销已退款或取消的权益；离线设备无法实时得知退款。本版没有订阅或服务端购买验单系统。"
               ]
             },
             {
-              "title": "5. 保留与清理",
+              "title": "5. 文字反馈",
               "paragraphs": [
-                "可通过应用内功能移除任务记录和应用自有副本。相机原片、导出文件与任务记录分别管理，移除任务不表示授权删除原片。卸载会移除私有副本，系统存储和备份行为可能影响保留情况；卸载前请将需要的结果保存到相册或文件。"
+                "只有填写文字、同意列明的上传内容并点击发送后，才会提交反馈。App 建立私有匿名 Firebase Authentication 标识，并将反馈正文、类别、提交编号、App 版本和构建号、系统及语言写入 Cloud Firestore。该技术标识不代表 App 登录，也不作为付费权益来源。认证及网络服务也可能处理 IP 和设备/网络信息。无需注册、提供邮箱或附加文件。请勿填写隐私信息或视频内容。",
+                "仅在服务端确认事务后显示已收到。网络结果不确定时保留本地草稿和稳定提交编号，供安全重试。请保留界面上的反馈编号以便支持或删除申请。客户端不能列出他人的反馈，也不能直接修改或删除已提交记录。"
               ]
             },
             {
-              "title": "6. 联系支持",
+              "title": "6. 保留与删除",
               "paragraphs": [
-                "可向lusanyuss@gmail.com发送问题及基本设备信息，我们使用你选择发送的内容处理请求。不要发送密码或不必要的私人视频；可询问或申请删除支持往来。"
+                "本地任务记录及 App 自有副本由应用内控件管理；相机原件及已导出的副本分别处理。卸载会按系统行为移除应用私有存储，请先保存需要的输出。",
+                "反馈计划在处理完成后删除，最长保留180天。Spark 首版由运营方人工管理删除，没有自动过期任务；匿名认证记录也需人工检查和删除。申请删除时联系 lusanyuss@gmail.com，并提供反馈编号与大致日期；请勿提供购买令牌或私人视频。卸载不会自动删除云端反馈。",
+                "Analytics 保留期由项目配置，首发建议2个月。Crashlytics、AdMob、Google Play 和支持邮件按各自政策及配置保留信息。正式上线前仍需核对实际保留设置、删除流程和云端接收状态。"
+              ]
+            },
+            {
+              "title": "7. 服务提供方、跨境与联系",
+              "paragraphs": [
+                "Google 服务可能在你所在国家以外的基础设施上处理数据；Firestore 使用项目选定的存储地区，服务 SDK 提供传输加密。我们不为压缩上传媒体，也不申请设备定位权限。",
+                "本静态网站不含 App SDK、统计脚本或反馈表单；GitHub Pages 按其政策处理托管和网络日志。隐私联系：lusanyuss@gmail.com。服务提供者：北京晓目标科技有限公司。更新日期：2026-10-28。本文描述启用服务的 Android 方案；明确标为未配置的本地候选不会因此使不可用服务实际运行。"
               ]
             }
           ]
@@ -179,7 +202,7 @@
             {
               "title": "3. 收费与可用性",
               "paragraphs": [
-                "本版会员销售关闭，不出售付费会员。商店上架及平台能力以实际状态为准，公开本协议不代表已经通过商店审核。"
+                "App 免费下载，全部本地压缩功能继续免费。启用服务的 Android 版本可提供非消耗型一次性购买以永久去除全部广告，无订阅。商店显示当地价格，并在付款前要求确认。待付款不授予去广告权益；恢复使用当前 Play 账号。退款和撤销在成功刷新商店状态后反映，离线时无法实时更新。销售取决于实际商品配置和地区。"
               ]
             },
             {
@@ -192,19 +215,18 @@
         },
         "deletion": {
           "title": "数据管理",
-          "summary": "管理本机数据、登录授权与支持请求。",
+          "summary": "管理本机数据、可选数据采集与支持请求。",
           "sections": [
             {
               "title": "本机数据",
               "paragraphs": [
-                "应用不运营云端账号库。通过应用内功能清理本机记录和应用自有文件，卸载前导出重要结果。"
+                "App 不提供注册或登录。使用应用内入口管理本地记录和自有文件。匿名反馈会建立私有云端标识并保存提交文字，与本地文件分别处理；卸载不自动删除反馈。"
               ]
             },
             {
               "title": "授权与请求",
               "paragraphs": [
-                "当前无账号登录，不需要申请删除云端账号。",
-                "联系 lusanyuss@gmail.com 处理支持往来和隐私请求。"
+                "在设置中分别关闭统计和崩溃报告，可停止后续可选采集。申请删除反馈或支持往来，请向 lusanyuss@gmail.com 发送反馈编号与大致日期，不要发送密码、购买令牌或私人媒体。我们按实际持有的数据核对处理。Play 购买记录及 Google 持有的 SDK 数据也适用其控制方式和政策。"
               ]
             }
           ]
