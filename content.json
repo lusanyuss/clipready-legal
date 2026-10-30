@@ -32,7 +32,7 @@
             {
               "title": "4. Optional Google services",
               "paragraphs": [
-                "No registration is required to compress or export videos. Service-enabled Android releases may use Google AdMob and its consent platform to show banners on Home, Exports, Results and Settings, and frequency-limited interstitials when returning home after successful batches. The advertising SDK can process IP-derived approximate location, app interactions, device or advertising identifiers, and diagnostic information for advertising, measurement and fraud prevention. Advertising privacy choices are provided when required. A verified one-time ad-removal purchase stops ad requests and removes all ad space.",
+                "No registration is required to compress or export videos. Service-enabled Android releases may use Google AdMob and its consent platform to show banners on Home, Exports, Results and Settings, and frequency-limited interstitials when returning home after successful batches. The advertising SDK can process IP-derived approximate location, app interactions, device or advertising identifiers, and diagnostic information for advertising, measurement and fraud prevention. Advertising privacy choices are provided when required. A verified one-time ad-removal purchase stops ad requests and removes all ad space. Ad requests use general-audience (G) filtering, non-personalized advertising and the SDK's restrictive consent-age treatment for all users. We do not collect birthdays or assume every user is an adult.",
                 "Firebase Analytics and Crashlytics are separate choices, both off by default. Analytics can process usage events, installation identifiers, device/app information and approximate location derived by the SDK. Crashlytics processes crash, performance and diagnostic information and installation identifiers. Our custom events exclude media, filenames, paths, feedback text, emails and purchase tokens. Our Dart error reporting redacts error messages. You can stop future optional collection in Settings; this does not automatically erase previously submitted data.",
                 "Google Play handles checkout and payment details. Purchasing and restoring use your Google Play purchasing account; there is no app registration or sign-in. The app receives purchase state and signed receipts, validates them on the device and keeps a private verified entitlement cache for offline startup. It does not receive your payment-card details. Successful store refreshes can revoke a refunded or cancelled entitlement; offline devices cannot detect refunds in real time. There is no subscription or server-side purchase-verification system in this release."
               ]
@@ -49,14 +49,20 @@
               "paragraphs": [
                 "Local task records and app-owned copies are managed using the app controls. Camera originals and exported copies are separate. Uninstalling removes app-private storage subject to platform behavior; save wanted outputs first.",
                 "Feedback is intended to be removed after handling and within 180 days. In the Spark implementation this is an operator-managed deletion process, not an automatic expiry job. Anonymous authentication records also require operator review and deletion. Contact lusanyuss@gmail.com with the Feedback ID and approximate date for a deletion request; do not send purchase tokens or private videos. Do not assume uninstalling deletes cloud feedback.",
-                "Analytics retention is configured in the project; the recommended launch setting is 2 months. Crashlytics, AdMob, Google Play and support email retain information under their respective policies and configured settings. Retention settings, deletion handling and cloud arrival must be verified before production."
+                "Analytics event and user data retention is set to 2 months, without resetting the retention period on new activity. Google Signals, granular location/device collection and advertising personalization are disabled for this property. Crashlytics, AdMob, Google Play and support email retain information under their respective policies and configured settings."
               ]
             },
             {
               "title": "7. Providers, transfers and contact",
               "paragraphs": [
-                "Google services may process data on infrastructure outside your country; Firestore storage uses the selected project location. Encryption in transit is provided by the service SDKs. We do not upload your media for compression or require device-location access.",
-                "This static website contains no app SDK, analytics scripts or feedback forms; GitHub Pages handles its own hosting/network logs. Privacy contact: lusanyuss@gmail.com. Provider: 北京晓目标科技有限公司. Updated 2026-10-29. This policy describes the service-enabled Android offering; local candidates explicitly marked unconfigured do not make unavailable services operational."
+                "Google services may process data on infrastructure outside your country. Feedback is stored in Cloud Firestore in the nam5 North America multi-region. Encryption in transit is provided by the service SDKs. We do not upload your media for compression or require device-location access.",
+                "This static website contains no app SDK, analytics scripts or feedback forms; GitHub Pages handles its own hosting/network logs. Privacy contact: lusanyuss@gmail.com. Provider: 北京晓目标科技有限公司. Updated 2026-10-30. This policy describes the service-enabled Android offering; local candidates explicitly marked unconfigured do not make unavailable services operational."
+              ]
+            },
+            {
+              "title": "8. Age and optional services",
+              "paragraphs": [
+                "ClipReady is intended for users aged 13 and over, not children under 13. All local compression features remain free and available without registration, telemetry or feedback submission. Optional Analytics and Crashlytics require a separate confirmation that the user is at least 18 before enabling either service. Text feedback also requires confirmation of age 18 or over and agreement to the listed upload details. Users under 18 should leave these optional services off. Google Play applies its own account, purchase and parental-approval rules. If you believe information from an underage user was submitted, contact lusanyuss@gmail.com with the Feedback ID or relevant date so we can investigate and remove records we control. Do not send identity documents, private videos or payment tokens."
               ]
             }
           ]
@@ -154,7 +160,7 @@
             {
               "title": "4. 可选 Google 服务",
               "paragraphs": [
-                "压缩和导出无需注册。启用服务的 Android 版本可使用 Google AdMob 及其同意管理平台，在首页、导出记录、结果和设置展示横幅，并在成功完成批次后返回首页时展示有频率限制的插屏。广告 SDK 可处理由 IP 推导的大致位置、App 交互、设备或广告标识及诊断信息，用于广告、衡量和防欺诈；按要求提供广告隐私选项。已验证的一次性去广告购买会停止广告请求并移除全部广告占位。",
+                "压缩和导出无需注册。启用服务的 Android 版本可使用 Google AdMob 及其同意管理平台，在首页、导出记录、结果和设置展示横幅，并在成功完成批次后返回首页时展示有频率限制的插屏。广告 SDK 可处理由 IP 推导的大致位置、App 交互、设备或广告标识及诊断信息，用于广告、衡量和防欺诈；按要求提供广告隐私选项。已验证的一次性去广告购买会停止广告请求并移除全部广告占位。 所有广告请求统一采用G级内容过滤、非个性化广告及SDK更严格的同意年龄保护，不采集生日，也不假定每位用户已成年。",
                 "Firebase Analytics 与 Crashlytics 分别选择，首次默认关闭。统计 SDK 可处理使用事件、安装标识、设备及 App 信息和由 SDK 推导的大致位置。崩溃服务处理崩溃、性能与诊断信息及安装标识。自定义事件不包含媒体、文件名、路径、反馈正文、邮箱或购买令牌；Dart 错误报告会隐去异常正文。你可在设置中停止后续可选采集，这不自动删除此前已提交的数据。",
                 "Google Play 处理结账和付款资料。购买和恢复使用 Google Play 购买账号，App 不提供注册或登录。App 接收购买状态及签名回执，在设备上验证并保存私有权益缓存，以便离线启动。App 不接收银行卡资料。成功刷新商店状态可撤销已退款或取消的权益；离线设备无法实时得知退款。本版没有订阅或服务端购买验单系统。"
               ]
@@ -171,14 +177,20 @@
               "paragraphs": [
                 "本地任务记录及 App 自有副本由应用内控件管理；相机原件及已导出的副本分别处理。卸载会按系统行为移除应用私有存储，请先保存需要的输出。",
                 "反馈计划在处理完成后删除，最长保留180天。Spark 首版由运营方人工管理删除，没有自动过期任务；匿名认证记录也需人工检查和删除。申请删除时联系 lusanyuss@gmail.com，并提供反馈编号与大致日期；请勿提供购买令牌或私人视频。卸载不会自动删除云端反馈。",
-                "Analytics 保留期由项目配置，首发建议2个月。Crashlytics、AdMob、Google Play 和支持邮件按各自政策及配置保留信息。正式上线前仍需核对实际保留设置、删除流程和云端接收状态。"
+                "Analytics事件和用户数据保留期已设为2个月，不因新增活动重置保留期；本属性的Google Signals、精细位置与设备收集和广告个性化均已关闭。Crashlytics、AdMob、Google Play和支持邮件按各自政策与配置保留信息。"
               ]
             },
             {
               "title": "7. 服务提供方、跨境与联系",
               "paragraphs": [
-                "Google 服务可能在你所在国家以外的基础设施上处理数据；Firestore 使用项目选定的存储地区，服务 SDK 提供传输加密。我们不为压缩上传媒体，也不申请设备定位权限。",
-                "本静态网站不含 App SDK、统计脚本或反馈表单；GitHub Pages 按其政策处理托管和网络日志。隐私联系：lusanyuss@gmail.com。服务提供者：北京晓目标科技有限公司。更新日期：2026-10-28。本文描述启用服务的 Android 方案；明确标为未配置的本地候选不会因此使不可用服务实际运行。"
+                "Google服务可能在你所在国家以外的基础设施上处理数据；文字反馈存储在Cloud Firestore北美多区域nam5。服务SDK提供传输加密。压缩不上传媒体，也不申请设备定位权限。",
+                "本静态网站不含 App SDK、统计脚本或反馈表单；GitHub Pages 按其政策处理托管和网络日志。隐私联系：lusanyuss@gmail.com。服务提供者：北京晓目标科技有限公司。更新日期：2026-10-30。本文描述启用服务的 Android 方案；明确标为未配置的本地候选不会因此使不可用服务实际运行。"
+              ]
+            },
+            {
+              "title": "8. 年龄与可选服务",
+              "paragraphs": [
+                "ClipReady面向13岁及以上用户，不面向13岁以下儿童。全部本地压缩功能免费，不要求注册、启用统计或发送反馈。开启Analytics或Crashlytics前，需另行确认已年满18岁；文字反馈也需确认年满18岁并同意列明的上传内容。未满18岁请保持这些可选服务关闭。Google Play按其规则管理购买账号、付款与监护人批准。如认为未成年用户提交了信息，请联系lusanyuss@gmail.com并提供反馈编号或相关日期，以便核查、删除我们控制的记录；请勿发送身份证件、私人视频或付款令牌。"
               ]
             }
           ]
